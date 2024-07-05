@@ -73,7 +73,7 @@ namespace API.Controllers
 
             if (await _categoryRepo.AnyAsync(x => x.Name == model.Name))
             {
-                return BadRequest("Bu isimde bir kategori var. Frklı bir isim seçiniz!");
+                return BadRequest("Bu isimde bir kategori var. Farklı bir isim seçiniz!");
             }
 
             var category = _mapper.Map<Category>(model);

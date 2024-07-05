@@ -17,6 +17,7 @@ namespace DataAccess.DependencyResolvers.Autofac
         {
             // İstek başı bu nesneden bir adet üretilmesi sağlanır.
             builder.RegisterType<CategoryRepository>().As<ICategoryRepository>().InstancePerLifetimeScope();
+            builder.RegisterType<ProductRepository>().As<IProductRepository>().InstancePerLifetimeScope();
 
             // AutoMapper Konfigurasyonu
             var mapperConfig = new MapperConfiguration(cfg =>

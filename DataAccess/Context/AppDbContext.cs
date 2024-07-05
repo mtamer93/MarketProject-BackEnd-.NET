@@ -25,9 +25,11 @@ namespace DataAccess.Context
         {
             // Seed Data'lar
             modelBuilder.ApplyConfiguration(new CategorySeedData());
+            modelBuilder.ApplyConfiguration(new ProductSeedData());
 
             // Configler
             modelBuilder.ApplyConfiguration(new CategoryConfig());
+            modelBuilder.ApplyConfiguration(new ProductConfig());
 
             base.OnModelCreating(modelBuilder);
         }

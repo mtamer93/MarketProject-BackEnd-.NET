@@ -19,5 +19,7 @@ namespace ApplicationCore.Entities.Concrete
         [MaxLength(750)]
         [MinLength(2)]
         public string Description { get; set; }
+
+        public ICollection<Product> Products { get; set; }
     }
 }
